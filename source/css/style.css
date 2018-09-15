@@ -1,0 +1,80 @@
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto.woff2') format('woff2'),
+    url('../fonts/roboto.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/robotomedium.woff2') format('woff2'),
+    url('../fonts/robotomedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/robotobold.woff2') format('woff2'),
+    url('../fonts/robotobold.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #000000;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body ul,
+body ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+}
+
+.user-navigation {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.user-navigation li {
+  display: flex;
+}
