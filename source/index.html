@@ -8,36 +8,46 @@
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<a class="main-header-logo">
-				<img src="img/nerds-logo.svg" alt="" width="160" height="65">
-			</a>
-			<ul class="site-navigation">
-				<li><a href="info.html">Студия</a></li>
-				<li><a href="clients.html">Клиенты</a></li>
-				<li><a href="shop.html">Магазин</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-			</ul>
-			<ul class="user-navigation">
-				<li><a href="#">Корзина</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main class="container">
+    <div class="wrapper">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" alt="NERD'S" width="160" height="65">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#">
+          <svg  width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+          <g>
+            <circle cx="4.5" cy="13.5" r="1.5"/>
+            <circle cx="12.5" cy="13.5" r="1.5"/>
+            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+          </g>
+          </svg>
+          Корзина</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+	<main class="index-main">
 		<h1 class="visually-hidden">Студия дизайна Nerds</h1>
 
-		<section class="know-more">
+    <section class="slider">
+      <div class="slider-content wrapper">
+  			<h2 class="visually-hidden">Наши преимущества</h2>
+  			<p class="motto">Долго, дорого, скрупулезно.</p>
+  			<p class="motto-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  			<a class="button" href="">Узнать больше</a>
+      </div>
+    </section>
 
-			<h2 class="visually-hidden">Наши преимущества</h2>
-			<p class="motto">Долго, дорого, скрупулезно.</p>
-			<p class="motto-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-			<a class="button" href="">Узнать больше</a>
 
-		</section>
-
-		<section class="products">
+		<section class="products wrapper">
 			<h2 class="visually-hidden">Наши услуги</h2>
-
 			<ul class="products-list">
 				<li class="product-item">
 					<img src="img/illustration-1" alt="" width="300" height="146">
@@ -64,13 +74,10 @@
 					<a class="button-presentations" href="">Заказать</a>
 				</li>
 			</ul>
-
 		</section>
 
-		<section class="about-us">
-
+		<section class="about-us wrapper">
 			<h2 class="visually-hidden">Почему именно мы</h2>
-
 			<div class="about-us-description">
 				<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -99,7 +106,7 @@
 			</div>
 		</section>
 
-		<section class="clients">
+		<section class="clients wrapper">
 			<h2 class="visually-hidden">Наши клиенты</h2>
 			<ul class="client-list">
 				<li><img src="" alt=""></li>
@@ -108,25 +115,31 @@
 				<li><img src="" alt=""></li>
 			</ul>
 		</section>
-
-		<footer class="main-footer">
-			<h2 class="visually-hidden">Как нас найти</h2>
-			<section class="map">
-				<img src="" alt="">
-			</section>
-			<section class="contacts">
-				<ul class="contacts-links">
-					<li>vk</li>
-					<li>facebook</li>
-					<li>instagramm</li>
-				</ul>
-        <div>
-				<b>Давайте дружить, это выгодно!</b>
-				<span>Скидка 10% для друзей из социальных сетей.</span>
-        </div>
-			</section>
-		</footer>
-
 	</main>
+	<footer class="main-footer wrapper">
+    <h2 class="visually-hidden">Как нас найти</h2>
+    <div class="map">
+      <img src="img/map.png" alt="Map" width="1180">
+      <div class="map-contacts">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p class="contacts">
+        191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</br>
+        тел. +7 (812) 275-75-75
+        </p>
+        <button type="button" class="btn-writeus">Напишите нам</button>
+      </div>
+    </div>
+    <section class="contacts">
+      <ul class="contacts-links">
+        <li>vk</li>
+        <li>facebook</li>
+        <li>instagramm</li>
+      </ul>
+      <div class="contacts-motto">
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
 </body>
 </html>
