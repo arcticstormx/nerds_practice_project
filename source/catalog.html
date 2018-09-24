@@ -34,17 +34,14 @@
     </div>
   </header>
   <main class="catalog-main">
+
     <div class="intro-section">
-      <div class="wrapper">
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      </div>
+      <h1 class="wrapper catalog-title">Магазин готовых шаблонов</h1>
     </div>
 
       <div class="wrapper catalog">
         <section class="catalog-filter">
-
           <div class="filter-main">
-
             <form action="#" method="get">
             <label class="filter-title" for="price-range">Стоимость:</label>
               <div class="slider">
@@ -52,9 +49,9 @@
               </div>
 
               <div class="filter-price-range">
-                <input type="number" id="min-number" name="min-range" value="0">
+                ОТ <input type="number" id="min-number" name="min-range" value="0">
                 <span></span>
-                <input type="number" id="max-number" name="max-range" value="30000">
+                ДО <input type="number" id="max-number" name="max-range" value="30000">
               </div>
 
               <div class="filter-type">
@@ -85,7 +82,7 @@
                 </fieldset>
               </div>
 
-              <input type="submit" class="btn-filter" value="Показать">
+              <input type="submit" class="filter-btn-submit" value="Показать">
             </form>
           </div>
         </section>
@@ -164,8 +161,8 @@
             <li class="pagination-btn"><a href="">3</a></li>
             <li class="pagination-btn pagination-btn-next"><a href="">Следующая</a></li>
           </ol>
-        </div>
-      </section>
+        </section>
+      </div>
   </main>
   <footer class="main-footer wrapper">
         <h2 class="visually-hidden">Как нас найти</h2>
