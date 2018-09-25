@@ -14,14 +14,14 @@
           <img src="img/nerds-logo.svg" alt="NERD'S" width="160" height="65">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="site-nav-link" href="#">Студия</a></li>
+          <li><a class="site-nav-link" href="#">Клиенты</a></li>
+          <li><a class="site-nav-link" href="#">Магазин</a></li>
+          <li><a class="site-nav-link" href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#">
-          <svg  width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+          <li><a class="user-nav-link" href="#">
+          <svg  width="15px" height="15px" opacity="0.5" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
           <g>
             <circle cx="4.5" cy="13.5" r="1.5"/>
             <circle cx="12.5" cy="13.5" r="1.5"/>
@@ -49,36 +49,54 @@
               </div>
 
               <div class="filter-price-range">
-                ОТ <input type="number" id="min-number" name="min-range" value="0">
+                <label for="min-number">ОТ</label>
+                <input type="number" id="min-number" name="min-range" value="0">
                 <span></span>
-                ДО <input type="number" id="max-number" name="max-range" value="30000">
+                <label for="max-number">ДО</label>
+                <input type="number" id="max-number" name="max-range" value="30000">
               </div>
 
               <div class="filter-type">
                 <fieldset>
                   <legend class="filter-title">Сетка:</legend>
-                  <label for="adaptive">Адаптивная</label>
-                  <input type="radio" id="adaptive" name="website-type[]">
-                  <label for="">Фиксированная</label>
-                  <input type="radio" id="fixed" name="website-type[]">
-                  <label for="">Резиновая</label>
-                  <input type="radio" id="responsive" name="website-type[]">
+                  <div>
+                    <input type="radio" id="adaptive" name="website-type[]">
+                    <label for="adaptive">Адаптивная</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="fixed" name="website-type[]">
+                    <label for="">Фиксированная</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="responsive" name="website-type[]">
+                    <label for="">Резиновая</label>
+                  </div>
                 </fieldset>
               </div>
 
               <div class="filter-features">
                 <fieldset>
                   <legend class="filter-title">Особенности:</legend>
-                  <label for="slider">Слайдер</label>
-                  <input type="checkbox" id="slider" name="features[]">
-                  <label for="advantages">Блок преимуществ</label>
-                  <input type="checkbox" id="advantages" name="features[]">
-                  <label for="news">Новости</label>
-                  <input type="checkbox" id="news" name="features[]">
-                  <label for="gallery">Галерея</label>
-                  <input type="checkbox" id="gallery" name="features[]">
-                  <label for="cart">Корзина</label>
-                  <input type="checkbox" id="cart" name="features[]">
+                  <div>
+                    <input type="checkbox" id="slider" name="features[]">
+                    <label for="slider">Слайдер</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="advantages" name="features[]">
+                    <label for="advantages">Блок преимуществ</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="news" name="features[]">
+                    <label for="news">Новости</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="gallery" name="features[]">
+                    <label for="gallery">Галерея</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cart" name="features[]">
+                    <label for="cart">Корзина</label>
+                  </div>
                 </fieldset>
               </div>
 
@@ -164,10 +182,10 @@
         </section>
       </div>
   </main>
-  <footer class="main-footer wrapper">
+  <footer class="main-footer">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="map">
-          <img src="img/map.png" alt="Map" width="1180">
+          <img src="img/map.png" alt="Map" width="1200">
           <div class="map-contacts">
             <h3>NЁRDS DESIGN STUDIO</h3>
             <p class="contacts">
@@ -177,15 +195,24 @@
             <button type="button" class="btn-writeus">Напишите нам</button>
           </div>
         </div>
-        <section class="contacts">
+        <section class="wrapper contacts">
           <ul class="contacts-links">
-            <li>vk</li>
-            <li>facebook</li>
-            <li>instagramm</li>
+            <li><a class="social-link" href="#">
+              <!-- ВСТАВИТЬ СВГ -->
+              <span class="visually-hidden">Мы в VK</span>
+            </a></li>
+            <li><a class="social-link" href="#">
+              <!-- ВСТАВИТЬ СВГ -->
+              <span class="visually-hidden">Мы в Facebook</span>
+            </a></li>
+            <li><a class="social-link" href="#">
+              <!-- ВСТАВИТЬ СВГ -->
+              <span class="visually-hidden">Мы в Instagram</span>
+            </a></li>
           </ul>
           <div class="contacts-motto">
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <p class="contacts-motto-main">Давайте дружить, это выгодно!</p>
+            <p class="contacts-discount">Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </section>
     </footer>
