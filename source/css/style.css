@@ -85,11 +85,23 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 }
 
 .main-navigation a {
+  padding-top: 12px;
+  padding-bottom: 12px;
   position: relative;
   display: inline-flex;
-  color: #000000;
-  line-height: 30px;
   align-items: center;
+
+  color: #000000;
+
+  text-transform: uppercase;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.main-header-logo svg:active {
+  opacity: 0.5;
 }
 
 .site-navigation,
@@ -97,11 +109,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   display: flex;
   flex-direction: row;
   margin: 0;
-
-  text-transform: uppercase;
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  padding: 0;
 }
 
 .site-navigation li,
@@ -109,9 +117,17 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   display: flex;
 }
 
-.site-navigation a {
+.site-navigation li {
   padding-left: 23px;
   padding-right: 23px;
+}
+
+.user-navigation a {
+  padding-left: 40px;
+}
+
+a.nav-link-current {
+  border-bottom: 3px solid red;
 }
 
 a.site-nav-link:hover {
@@ -135,7 +151,7 @@ a.user-nav-link:active {
 
 .user-navigation svg {
   position: absolute;
-  left: -41px;
+  left: 0px;
 }
 
 /*MAIN*/
