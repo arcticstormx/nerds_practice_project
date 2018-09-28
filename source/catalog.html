@@ -94,9 +94,9 @@
 
       <div class="wrapper catalog">
         <section class="catalog-filter">
-          <div class="filter-main">
-            <form action="#" method="get">
-            <label class="filter-title" for="price-range">Стоимость:</label>
+          <!-- <div class="filter-main"> -->
+            <form class="filter-main" action="#" method="get">
+              <label class="filter-title" for="price-range">Стоимость:</label>
               <div class="slider">
                 <input type="range" id="price-range" min="0" max="30000" step="100">
               </div>
@@ -111,7 +111,7 @@
 
               <div class="filter-type">
                 <fieldset>
-                  <legend class="filter-title">Сетка:</legend>
+                  <legend class="filter-title-secondary">Сетка:</legend>
                   <div>
                     <input type="radio" id="adaptive" name="website-type[]">
                     <label for="adaptive">Адаптивная</label>
@@ -129,7 +129,7 @@
 
               <div class="filter-features">
                 <fieldset>
-                  <legend class="filter-title">Особенности:</legend>
+                  <legend class="filter-title-secondary">Особенности:</legend>
                   <div>
                     <input type="checkbox" id="slider" name="features[]">
                     <label for="slider">Слайдер</label>
@@ -155,7 +155,7 @@
 
               <input type="submit" class="filter-btn-submit" value="Показать">
             </form>
-          </div>
+          <!-- </div> -->
         </section>
 
         <section class="catalog-products">
@@ -178,49 +178,55 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <img src="img/site-1.jpg" alt="Mockup 1" width="360" height="576">
-              <div class="item-description">
-                <span>Sedona</span>
-                <span>Информационный сайт для туристов</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+              <div class="catalog-item-popup">
+                <span class="catalog-item-title">Sedona</span>
+                <span class="catalog-item-description">Информационный сайт для туристов</span>
                 <button type="button" class="catalog-btn-buy">9 900 руб.</button>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/site-2.jpg" alt="Mockup 2" width="360" height="576">
-              <div class="item-description">
-                <span>Pink app</span>
-                <span>Продуктовый лендинг приложения для iOS и Android</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+              <div class="catalog-item-popup">
+                <span class="catalog-item-title">Pink app</span>
+                <span class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</span>
                 <button type="button" class="catalog-btn-buy">9 900 руб.</button>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/site-3.jpg" alt="Mockup 3" width="360" height="576">
-              <div class="item-description">
-                <span>Barbershop</span>
-                <span>Сайт салоны красоты. Для мужчин, да.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+              <div class="catalog-item-popup">
+                <span class="catalog-item-title">Barbershop</span>
+                <span class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</span>
                 <button type="button" class="catalog-btn-buy">9 900 руб.</button>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/site-4.jpg" alt="Mockup 4" width="360" height="576">
-              <div class="item-description">
-                <span>Mishka</span>
-                <span>Интернет-магазин вязаных игрушек</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+              <div class="catalog-item-popup">
+                <span class="catalog-item-title">Mishka</span>
+                <span class="catalog-item-description">Интернет-магазин вязаных игрушек</span>
                 <button type="button" class="catalog-btn-buy">9 900 руб.</button>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/site-4.jpg" alt="Mockup 5" width="360" height="576">
-              <div class="item-description">
-                <span>A plus</span>
-                <span>Лендинг курсов повышения квалификации</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+              <div class="catalog-item-popup">
+                <span class="catalog-item-title">A plus</span>
+                <span class="catalog-item-description">Лендинг курсов повышения квалификации</span>
                 <button type="button" class="catalog-btn-buy">9 900 руб.</button>
               </div>
             </li>
             <li class="catalog-item">
               <img src="img/site-5.jpg" alt="Mockup 6" width="360" height="576">
-              <div class="item-description">
-                <span>Кваст</span>
-                <span>Промо-сайт производителя крафтового кваса</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#e9e9e9" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+              <div class="catalog-item-popup">
+                <span class="catalog-item-title">Кваст</span>
+                <span class="catalog-item-description">Промо-сайт производителя крафтового кваса</span>
                 <button type="button" class="catalog-btn-buy">9 900 руб.</button>
               </div>
             </li>

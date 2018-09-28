@@ -163,9 +163,11 @@ a.user-nav-link:active {
 
 .catalog {
   padding-top: 58px;
+  padding-right: 0;
 
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .catalog-title {
@@ -184,7 +186,9 @@ a.user-nav-link:active {
 }
 
 .filter-sort {
-  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 
   display: flex;
   flex-direction: row;
@@ -192,8 +196,10 @@ a.user-nav-link:active {
   justify-content: space-between;
 }
 
-.filter-sort a {
-  color: black;
+.filter-links {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .filter-title {
@@ -206,11 +212,16 @@ a.user-nav-link:active {
   text-transform: uppercase;
 }
 
-.filter-title legend {
-  line-height: 30px;
+.filter-title-secondary {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .catalog-filter {
+  margin-right: 120px;
   min-width: 260px;
   font-size: 16px;
   line-height: 20px;
@@ -232,7 +243,22 @@ a.user-nav-link:active {
   flex-direction: column;
 }
 
+.filter-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-main .filter-title {
+  margin-bottom: 60px;
+}
+
+.slider input {
+  width: 100%;
+}
+
 .filter-price-range {
+  margin-bottom: 60px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -246,6 +272,7 @@ a.user-nav-link:active {
   -webkit-appearance: none;
 
   margin-left: 10px;
+  border-radius: 3px;
   border: none;
   background-color: #eeeeee;
   width: 80px;
@@ -253,19 +280,51 @@ a.user-nav-link:active {
   text-align: center;
 }
 
-.sort-btn {
+.filter-type {
+  margin-bottom: 50px;
+}
+
+.filter-type div,
+.filter-features div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filter-type legend,
+.filter-features legend {
+  margin-bottom: 20px;
+}
+
+.filter-type label,
+.filter-features label {
+  line-height: 16px;
+}
+
+.filter-features {
+  margin-bottom: 50px;
+}
+
+a.sort-btn {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   font-family: 'Roboto', 'Arial', sans-serif;
   text-transform: uppercase;
+  color: #dbdbdb;
+}
+
+a.sort-btn-active {
+  color: black;
 }
 
 .filter-btn-submit {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 0;
-  padding-right: 0;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-radius: 3px;
+
   border: none;
   background-color: #eeeeee;
 
@@ -290,7 +349,6 @@ a.user-nav-link:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 1;
 }
 
 .catalog-item {
@@ -299,15 +357,58 @@ a.user-nav-link:active {
   margin-left: 20px;
   margin-right: 20px;
   display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+.catalog-item-popup {
+  min-height: 231px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 35px;
+  padding-bottom: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #eeeeee;
+  /*visibility: hidden;*/
+}
+
+.catalog-item-title {
+  /*margin-bottom: 27px;*/
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: 'Roboto', 'Arial', sans-serif;
+  color: black;
+}
+
+.catalog-item-description {
+  /*margin-bottom: 32px;*/
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: 'Roboto', 'Arial', sans-serif;
+  color: #666666;
+}
+
+.catalog-btn-buy {
+  /*margin-bottom: 43px;*/
+  color: white;
+  background-color: #fb565a;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-radius: 3px;
+  border: none;
+  width: 100%;
 }
 
 .intro-section {
   background-color: #eeeeee;
-}
-
-.item-description {
-  position: absolute;
-  visibility: hidden;
 }
 
 .pagination {
@@ -316,7 +417,6 @@ a.user-nav-link:active {
   padding: 0;
   display: flex;
   flex-direction: row;
-  flex-grow: -1;
 }
 
 .pagination-btn a {
@@ -326,9 +426,14 @@ a.user-nav-link:active {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 5%;
+  border-radius: 3px;
   background-color: #eeeeee;
   color: black;
+}
+
+.pagination-btn-current a {
+  box-shadow: 0px 0px 0px 3px #dbdbdb inset;
+  background-color: white;
 }
 
 .pagination-btn-next a {
