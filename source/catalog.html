@@ -94,74 +94,61 @@
 
       <div class="wrapper catalog">
         <section class="catalog-filter">
-          <!-- <div class="filter-main"> -->
-            <form class="filter-main" action="#" method="get">
-              <label class="filter-title" for="price-range">Стоимость:</label>
-              <div class="slider">
-                <input type="range" id="price-range" min="0" max="30000" step="100">
-              </div>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="filter-item">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                  </div>
+                </div>
+              </fieldset>
 
-              <div class="filter-price-range">
-                <label for="min-number">ОТ</label>
-                <input type="number" id="min-number" name="min-range" value="0">
-                <span></span>
-                <label for="max-number">ДО</label>
-                <input type="number" id="max-number" name="max-range" value="30000">
-              </div>
 
-              <div class="filter-type">
-                <fieldset>
-                  <legend class="filter-title-secondary">Сетка:</legend>
-                  <div>
-                    <input type="radio" id="adaptive" name="website-type[]">
-                    <label for="adaptive">Адаптивная</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="fixed" name="website-type[]">
-                    <label for="">Фиксированная</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="responsive" name="website-type[]">
-                    <label for="">Резиновая</label>
-                  </div>
-                </fieldset>
-              </div>
+              <fieldset class="filter-item">
+                <legend>Сетка:</legend>
+                <div class="filter-list radio-filter">
+                  <input class="visually-hidden radio-filter-btn" type="radio" id="adaptive" name="website-type[]">
+                  <label for="adaptive">Адаптивная</label>
+                  <input class="visually-hidden radio-filter-btn" type="radio" id="fixed" name="website-type[]">
+                  <label for="fixed">Фиксированная</label>
+                  <input class="visually-hidden radio-filter-btn" type="radio" id="responsive" name="website-type[]">
+                  <label for="responsive">Резиновая</label>
+                </div>
+              </fieldset>
 
-              <div class="filter-features">
-                <fieldset>
-                  <legend class="filter-title-secondary">Особенности:</legend>
-                  <div>
-                    <input type="checkbox" id="slider" name="features[]">
-                    <label for="slider">Слайдер</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="advantages" name="features[]">
-                    <label for="advantages">Блок преимуществ</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="news" name="features[]">
-                    <label for="news">Новости</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="gallery" name="features[]">
-                    <label for="gallery">Галерея</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="cart" name="features[]">
-                    <label for="cart">Корзина</label>
-                  </div>
-                </fieldset>
-              </div>
+              <fieldset class="filter-item">
+                <legend>Особенности:</legend>
+                <div class="filter-list checkbox-filter">
+                  <input class="visually-hidden checkbox-filter-btn" type="checkbox" id="slider" name="features[]">
+                  <label for="slider">Слайдер</label>
+                  <input class="visually-hidden checkbox-filter-btn" type="checkbox" id="advantages" name="features[]">
+                  <label for="advantages">Блок преимуществ</label>
+                  <input class="visually-hidden checkbox-filter-btn" type="checkbox" id="news" name="features[]">
+                  <label for="news">Новости</label>
+                  <input class="visually-hidden checkbox-filter-btn" type="checkbox" id="gallery" name="features[]">
+                  <label for="gallery">Галерея</label>
+                  <input class="visually-hidden checkbox-filter-btn" type="checkbox" id="cart" name="features[]">
+                  <label for="cart">Корзина</label>
+                </div>
+              </fieldset>
 
-              <input type="submit" class="filter-btn-submit" value="Показать">
+              <input type="submit" class="filter-submit-btn" value="Показать">
             </form>
-          <!-- </div> -->
         </section>
 
         <section class="catalog-products">
-          <div class="filter-sort">
-            <h3 class="filter-title">Сортировать:</h3>
-            <div class="filter-links">
+          <div class="sort-filter">
+            <h3 class="sort-title">Сортировать:</h3>
+            <div class="sort-links">
               <a href="#" class="sort-btn sort-btn-active">По цене</a>
               <a href="#" class="sort-btn">По типу</a>
               <a href="#" class="sort-btn">По названию</a>
