@@ -169,12 +169,116 @@ a.user-nav-link:active {
 
 
 /*MAIN*/
+.index-main,
 .catalog-main {
   display: flex;
   flex-direction: column;
   margin-top: 0;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+/*INDEX PAGE*/
+.products {
+  margin-bottom: 80px;
+}
+
+.products-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products-item {
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.products-item img {
+  margin-bottom: 30px;
+}
+
+.product-name {
+  margin-bottom: 25px;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-description {
+  margin-bottom: 35px;
+  padding-right: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+a.product-btn {
+  max-width: 160px;
+  color: #ffffff;
+}
+
+a.product-btn-website {
+  background-color: #fb565a;
+}
+
+a.product-btn-app {
+  background-color: #00ca74;
+}
+
+a.product-btn-pres {
+  background-color: #efc84a;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-description {
+  flex-direction: column;
+}
+
+.about-description h2 {
+  margin-bottom: 38px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.about-description p {
+  margin-top: 0;
+  margin-bottom: 46px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about-description b {
+  font-weight: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.about-description ul {
+  margin: 0;
+  padding: 0;
+}
+.about-facts {
+  flex-direction: column;
+}
+
+/*CATALOG PAGE*/
 .catalog {
   padding-top: 58px;
   padding-right: 0;
@@ -266,7 +370,7 @@ a.user-nav-link:active {
   opacity: 1;
 }
 
-/*ОСНОВНОЙ ФИЛЬТР*/
+/*ОСНОВНОЙ ФИЛЬТР CATALOG*/
 /*ОСНОВНЫЕ КЛАССЫ И КНОПКА ОТПРАВКИ*/
 .catalog-filter {
   margin-right: 120px;
@@ -315,7 +419,7 @@ a.user-nav-link:active {
   outline: 0;
 }
 
-/*ФИЛЬТР СЛАЙДЕР*/
+/*ФИЛЬТР СЛАЙДЕР CATALOG*/
 .range-filter {
   width: 260px;
   margin-top: 60px;
@@ -418,7 +522,7 @@ a.user-nav-link:active {
   background: #f1f1f1;
 }
 
-/*ФИЛЬТР РАЗДЕЛЫ СЕТКА И СТОИМОСТЬ */
+/*ФИЛЬТР РАЗДЕЛЫ СЕТКА И СТОИМОСТЬ CATALOG*/
 /*ОБЩИЕ КЛАССЫ*/
 .filter-list {
   margin-top: 19px;
@@ -465,7 +569,7 @@ a.user-nav-link:active {
   opacity: 1;
 }
 
-/*ФИЛЬТР СПИСОК "СЕТКА"*/
+/*ФИЛЬТР СПИСОК "СЕТКА" CATALOG*/
 .radio-filter-btn:not(:checked) + label::before  {
   content:"";
 
@@ -498,7 +602,7 @@ a.user-nav-link:active {
   background-position: 0 0;
 }
 
-/*ФИЛЬТР СПИСОК "ОСОБЕННОСТИ"*/
+/*ФИЛЬТР СПИСОК "ОСОБЕННОСТИ" CATALOG*/
 .checkbox-filter-btn:not(:checked) + label::before  {
   content:"";
 
@@ -531,7 +635,7 @@ a.user-nav-link:active {
   background-position: 0 0;
 }
 
-/*БЛОК С КАРТИНКАМИ МАКЕТОВ*/
+/*БЛОК С КАРТИНКАМИ МАКЕТОВ CATALOG*/
 .catalog-products {
   display: flex;
   flex-direction: column;
