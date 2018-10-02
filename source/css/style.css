@@ -204,6 +204,7 @@ a.user-nav-link:active {
 }
 
 .product-name {
+  margin-top: 0;
   margin-bottom: 25px;
 
   font-size: 24px;
@@ -212,6 +213,7 @@ a.user-nav-link:active {
 }
 
 .product-description {
+  margin-top: 0;
   margin-bottom: 35px;
   padding-right: 40px;
 
@@ -238,16 +240,23 @@ a.product-btn-pres {
 }
 
 .about {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 75px;
+
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+
+  border-top: 2px #eeeeee solid;
 }
 
 .about-description {
+  margin-right: 140px;
   flex-direction: column;
 }
 
-.about-description h2 {
+.about-description-header {
+  margin-top: 0;
   margin-bottom: 38px;
 
   font-size: 45px;
@@ -255,7 +264,7 @@ a.product-btn-pres {
   font-weight: 500;
 }
 
-.about-description p {
+.about-description-content {
   margin-top: 0;
   margin-bottom: 46px;
 
@@ -264,18 +273,99 @@ a.product-btn-pres {
   font-weight: 400;
 }
 
-.about-description b {
-  font-weight: 16px;
+.about-description-listheader {
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+
+  text-transform: uppercase;
 }
 
-.about-description ul {
+.about-description-list {
   margin: 0;
   padding: 0;
 }
+
+.about-description li {
+  position: relative;
+
+  padding-left: 37px;
+  margin-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+}
+
+.about-description li::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
+}
+
 .about-facts {
+  display: flex;
   flex-direction: column;
+}
+
+.about-facts img {
+  margin-bottom: 40px;
+}
+
+.about-facts-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-facts-stats {
+  margin-right: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about-facts-stats:last-child {
+  margin-right: 0;
+}
+
+.about-facts-statsheader {
+  margin-top: 0;
+  margin-bottom: 46px;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-facts-number {
+  position: relative;
+
+  margin-bottom: 25px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.about-facts-number sup {
+  top: -10px;
+}
+
+.about-facts-small {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 /*CATALOG PAGE*/
