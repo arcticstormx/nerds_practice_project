@@ -90,15 +90,34 @@
 		<h1 class="visually-hidden">Студия дизайна Nerds</h1>
 
     <section class="slider">
-      <div class="wrapper slider-content">
-  			<h2 class="visually-hidden">Наши преимущества</h2>
-  			<p class="motto">Долго, дорого, скрупулезно.</p>
-  			<p class="motto-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  			<a class="button" href="">Узнать больше</a>
+      <div class="wrapper slider-container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="slider-controls">
+          <i class="active"></i>
+          <i></i>
+          <i></i>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Долго, долго,<br> скрупулёзно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="basic-btn slider-item-btn">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a href="#" class="basic-btn slider-item-btn">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a href="#" class="basic-btn slider-item-btn">Узнать больше</a>
+          </li>
+        </ul>
       </div>
     </section>
 
-		<section class="wrapper products">
+		<section class="products">
 			<h2 class="visually-hidden">Наши услуги</h2>
 			<ul class="products-list">
 				<li class="products-item">
@@ -130,43 +149,50 @@
 
 		<section class="about">
 			<h2 class="visually-hidden">Почему выбирают именно нас</h2>
-			<div class="about-description">
-				<p class="about-description-header">Мы - маленькая, но гордая дизайн-студия из Краснодара.<p>
-				<p class="about-description-content">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<p class="about-description-listheader">Выполняем заказы на разработку:</p>
-				<ul class="about-description-list">
-					<li>Веб-сайтов любой сложности</li>
-					<li>Мобильных приложений для iOS и Android</li>
-					<li>Слайдшоу и видео для корпоративных презентаций</li>
-				</ul>
-			</div>
-			<div class="about-facts">
-				<img src="img/nerds-illustration.png" alt="NERDS логотип" width="360" height="208">
-				<p class="about-facts-statsheader">с 2004 года Любим точность во всем:</p>
-        <div class="about-facts-container">
-          <div class="about-facts-stats">
-            <span class="about-facts-number">146<sup>%</sup></span>
-            <span class="about-facts-small">Уровень самоотдачи</span>
-          </div>
-          <div class="about-facts-stats">
-            <span class="about-facts-number">100<sup>%</sup></span>
-            <span class="about-facts-small">Соблюдение сроков</span>
-          </div>
-          <div class="about-facts-stats">
-            <span class="about-facts-number">50<sup>%</sup></span>
-            <span class="about-facts-small">Минимальная предоплата</span>
+      <div class="about-description">
+  			<div class="about-header">
+  				<p class="about-header-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.<p>
+          <p class="about-header-content">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        </div>
+        <img src="img/nerds-illustration.png" alt="NERDS логотип" width="360" height="208">
+      </div>
+
+      <div class="about-facts">
+        <div class="about-facts-listcontainer">
+          <p class="about-facts-listheader">Выполняем заказы на разработку:</p>
+          <ul class="about-facts-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-facts-statscontainer">
+  				<p class="about-facts-statsheader">с 2004 года Любим точность во всем:</p>
+          <div class="about-facts-container">
+            <div class="about-facts-stats">
+              <span class="about-facts-number">146<sup>%</sup></span>
+              <span class="about-facts-small">Уровень</br>самоотдачи</span>
+            </div>
+            <div class="about-facts-stats">
+              <span class="about-facts-number">100<sup>%</sup></span>
+              <span class="about-facts-small">Соблюдение</br>сроков</span>
+            </div>
+            <div class="about-facts-stats">
+              <span class="about-facts-number">50<sup>%</sup></span>
+              <span class="about-facts-small">Минимальная</br>предоплата</span>
+            </div>
           </div>
         </div>
 			</div>
 		</section>
 
-		<section class="clients wrapper">
+		<section class="clients">
 			<h2 class="visually-hidden">Наши клиенты</h2>
 			<ul class="client-list">
-				<li><img src="" alt=""></li>
-				<li><img src="" alt=""></li>
-				<li><img src="" alt=""></li>
-				<li><img src="" alt=""></li>
+				<li><img src="img/logo-1.png" alt="HTML Academy" width="199" height="68"></li>
+				<li><img src="img/logo-2.png" alt="Barbershop BORODINSKI" width="209" height="90"></li>
+				<li><img src="img/logo-3.png" alt="PINK" width="185" height="52"></li>
+				<li><img src="img/logo-4.png" alt="MISHKA" width="173" height="84"></li>
 			</ul>
 		</section>
 	</main>
