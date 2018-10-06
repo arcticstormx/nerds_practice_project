@@ -1256,7 +1256,7 @@ a.product-btn-pres:active {
   line-height: 22px;
 }
 
-<<<<<<< HEAD
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -1317,19 +1317,27 @@ a.product-btn-pres:active {
   padding-left: 100px;
   padding-right: 100px;
 
-  min-width: 960px;
-  min-height: 590px;
+  width: 960px;
+  max-width: 100%;
+  height: 590px;
+  max-height: 100%;
 
   display: flex;
   flex-direction: column;
   font-style: 'Roboto', 'Arial', sans-serif;
 
   background-color: white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .modal-writeus {
   top: 120px;
   left: 10%;
+}
+
+.modal form {
+  position: relative;
 }
 
 .modal label {
@@ -1342,6 +1350,9 @@ a.product-btn-pres:active {
 
 .modal input,
 .modal textarea {
+  padding-left: 15px;
+  padding-right: 15px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -1353,9 +1364,8 @@ a.product-btn-pres:active {
 }
 
 .modal textarea {
-  margin-bottom: 47px;
-
-  flex-grow: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   width: 100%;
   height: 118px;
@@ -1384,10 +1394,57 @@ a.product-btn-pres:active {
   flex-direction: column;
 }
 
+.modal-container:first-child {
+  margin-right: 40px
+}
+
+.modal-container-textarea {
+  margin-bottom: 47px;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .modal-close-btn {
   position: absolute;
+  top: -85.5px;
+  right: 0;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: inherit;
+  border: none;
+
+  cursor: pointer;
+}
+
+.modal-close-btn::before,
+.modal-close-btn::after {
+  content: "";
+
+  position: absolute;
+
+  width: 23px;
+  height: 4px;
+
+  background-color: #fb565a;
+
+  opacity: 1;
+}
+
+.modal-close-btn::before {
+  transform: rotate(45deg);
+}
+
+.modal-close-btn::after {
+  transform: rotate(-45deg);
 }
 
 .modal-submit-btn {
