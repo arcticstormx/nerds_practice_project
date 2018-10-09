@@ -87,17 +87,20 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 
 /*HEADER*/
 .main-header {
+  margin-bottom: 0;
+  padding-top: 48px;
+
   display: flex;
   flex-direction: row;
-  padding-top: 48px;
+
   background-color: #eeeeee;
-  margin-bottom: 0;
 }
 
 .main-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   list-style: none;
   align-items: center;
 }
@@ -105,6 +108,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 .main-navigation a {
   padding-top: 12px;
   padding-bottom: 12px;
+
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -126,10 +130,11 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 /*КНОПКИ НАВИГАЦИИ*/
 .site-navigation,
 .user-navigation {
-  display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
+
+  display: flex;
+  flex-direction: row;
 }
 
 .site-navigation li,
@@ -182,9 +187,14 @@ a.user-nav-link:active {
 .slider {
   position: relative;
 
+  margin-bottom: 80px;
+  padding-top: 63px;
   padding-bottom: 80px;
 
   background-color: #eeeeee;
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
 }
 
 .slider-controls {
@@ -258,19 +268,22 @@ a.user-nav-link:active {
 }
 
 .slider-item:nth-child(1) {
-  /*background-image: url("../img/slide1.jpg");*/
+  max-width: 380px;
+  /*background-image: url("../img/slide1.png");*/
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-item:nth-child(2) {
-  /*background-image: url("../img/slide2.jpg");*/
+  max-width: 520px;
+  /*background-image: url("../img/slide2.png");*/
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  /*background-image: url("../img/slide3.jpg");*/
+  max-width: 412px;
+  /*background-image: url("../img/slide3.png");*/
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -292,6 +305,7 @@ a.user-nav-link:active {
 }
 
 .slider-item-btn {
+  width: 240px;
   background-color: #fb565a;
   color: #ffffff;
 }
@@ -1132,6 +1146,7 @@ a.product-btn-pres:active {
 
   font-family: 'Roboto', 'Arial', sans-serif;
   background-color: #ffffff;
+
 }
 
 .contacts-name {
@@ -1256,57 +1271,10 @@ a.product-btn-pres:active {
   line-height: 22px;
 }
 
-
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
-
-
 /*МОДАЛЬНОЕ ОКНО "ОБРАТНАЯ СВЯЗЬ"*/
 .modal-show {
   display: flex;
-
-  animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
+  visibility: hidden;
 }
 
 .modal {
@@ -1332,8 +1300,9 @@ a.product-btn-pres:active {
 }
 
 .modal-writeus {
-  top: 120px;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal form {
@@ -1356,6 +1325,10 @@ a.product-btn-pres:active {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
+
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  outline: 0;
 }
 
 .modal input {
@@ -1369,6 +1342,8 @@ a.product-btn-pres:active {
 
   width: 100%;
   height: 118px;
+
+  resize: none;
 }
 
 .modal-header {
@@ -1453,4 +1428,17 @@ a.product-btn-pres:active {
 
   color: #ffffff;
   background: #fb565a;
+}
+
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: #e74246;
+  outline: 0;
+}
+
+.modal-submit-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }

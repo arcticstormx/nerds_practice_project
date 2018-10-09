@@ -93,13 +93,13 @@
       <div class="wrapper slider-container">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <i class="slider-btn1 active"></i>
+          <i class="slider-btn2"></i>
+          <i class="slider-btn3"></i>
         </div>
         <ul class="slider-list">
           <li class="slider-item">
-            <h3>Долго, долго,<br> скрупулёзно.</h3>
+            <h3>Долго, дорого,<br> скрупулёзно.</h3>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a href="#" class="basic-btn slider-item-btn">Узнать больше</a>
           </li>
@@ -231,7 +231,7 @@
       </div>
     </section>
   </footer>
-  <section class="modal modal-writeus">
+  <section class="modal modal-writeus modal-show">
     <h2 class="modal-header">Напишите нам</h2>
     <form action="echo.htmlacademy.ru" method="get">
       <div class="modal-wrapper">
@@ -245,62 +245,12 @@
         </div>
       </div>
       <div class="modal-container-textarea">
-        <label for="user-feedback"></label>
+        <label for="user-feedback">Текст письма</label>
         <textarea id="user-feedback" placeholder="В свободной форме"></textarea>
       </div>
-      <button class="modal-close-btn">Закрыть</button>
-      <button class="basic-btn modal-submit-btn">Отправить</button>
+      <button class="modal-close-btn" type="button">Закрыть</button>
+      <button class="basic-btn modal-submit-btn" type="button">Отправить</button>
     </form>
   </section>
-  <script>
-    var link = document.querySelector(".contacts-btn");
-    var popup = document.querySelector(".modal");
-    var close = popup.querySelector(".modal-btn-close");
-
-    var form = popup.querySelector("form");
-    var login = popup.querySelector("[name=login]");
-    var password = popup.querySelector("[name=password");
-
-    var storage = localStorage.getItem("login");
-
-    link.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-
-      if (storage) {
-        login.value = storage;
-        password.focus();
-      } else {
-        login.focus();
-      }
-    });
-
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
-    });
-
-    form.addEventListener("submit", function (evt) {
-      if (!login.value || !password.value) {
-        evt.preventDefault();
-        popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        console.log("Нужно ввести логин и пароль");
-        popup.classList.add("modal-error");
-      } else {
-        localStorage.setItem("login", login.value);
-      }
-    });
-
-    window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-          popup.classList.remove("modal-error");
-        }
-      }
-    })
-  </script>
 </body>
 </html>
