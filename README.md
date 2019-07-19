@@ -1,2 +1,2 @@
-# nerds_practice_project
+# practice_1_nerds
 A learning project to remember forgotten skills
