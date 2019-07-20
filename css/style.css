@@ -1,24 +1,24 @@
 /*ШРИФТЫ*/
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto.woff2') format('woff2'),
-    url('../fonts/roboto.woff') format('woff');
+  src: url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/robotomedium.woff2') format('woff2'),
-    url('../fonts/robotomedium.woff') format('woff');
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
-    url('../fonts/Roboto-Bold.woff') format('woff');
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
 }
 
 /*ОБЩИЕ СТИЛИ И КЛАССЫ*/
@@ -36,7 +36,7 @@ body {
   max-width: 1200px;
 
   color: #000000;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
 }
 
@@ -82,7 +82,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 /*HEADER*/
@@ -116,7 +116,7 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
   color: #000000;
 
   text-transform: uppercase;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -180,7 +180,7 @@ a.user-nav-link:active {
   flex-direction: column;
   margin-top: 0;
 
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 /*INDEX PAGE*/
@@ -622,7 +622,7 @@ a.product-btn-pres:active {
 
   font-size: 55px;
   line-height: 55px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
 }
 
@@ -644,7 +644,7 @@ a.product-btn-pres:active {
 
   font-size: 18px;
   line-height: 18px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -658,7 +658,7 @@ a.product-btn-pres:active {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   color: rgba(0,0,0,0.3);
 }
@@ -696,14 +696,14 @@ a.product-btn-pres:active {
   max-width: 260px;
   font-size: 16px;
   line-height: 20px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
 }
 
 .filter-title {
   font-size: 18px;
   line-height: 18px;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1037,7 +1037,7 @@ a.product-btn-pres:active {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  font-style: 'Roboto', 'Arial', sans-serif;
+  font-style: "Roboto", "Arial", sans-serif;
   color: black;
 }
 
@@ -1047,7 +1047,7 @@ a.product-btn-pres:active {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  font-style: 'Roboto', 'Arial', sans-serif;
+  font-style: "Roboto", "Arial", sans-serif;
   color: #666666;
 }
 
@@ -1144,7 +1144,7 @@ a.product-btn-pres:active {
 
   width: 319px;
 
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: #ffffff;
 
 }
@@ -1292,7 +1292,7 @@ a.product-btn-pres:active {
 
   display: flex;
   flex-direction: column;
-  font-style: 'Roboto', 'Arial', sans-serif;
+  font-style: "Roboto", "Arial", sans-serif;
 
   background-color: white;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5);
